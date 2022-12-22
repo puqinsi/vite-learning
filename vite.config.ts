@@ -2,12 +2,13 @@ import { defineConfig, normalizePath } from 'vite';
 import path from 'path';
 import react from '@vitejs/plugin-react';
 import autoprefixer from 'autoprefixer';
+import viteEslint from 'vite-plugin-eslint';
 
 const variablePath = normalizePath(path.resolve('/src/assets/variable.scss'));
 // https://vitejs.dev/config/
 export default defineConfig({
     // root: path.join(__dirname, 'src'), // 修改项目根目录
-    plugins: [react()],
+    plugins: [react(),viteEslint()],
     css: {
         preprocessorOptions: {
             scss: {
