@@ -6,7 +6,8 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "HMR:dev": "vite serve src/examples/HMR"
   },
   "dependencies": {
     "react": "^18.2.0",
