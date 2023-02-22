@@ -1,4 +1,6 @@
 # vite-learning
+
 vite learning cases
 
-## 2023
+[x] HMR
+[x] 模块联邦
